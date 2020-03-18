@@ -35,6 +35,7 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				n_return++;
 			}
+
 			while (data_arrange[cont_strc].format_module)
 			{
 				if (data_arrange[cont_strc].format_module[0] == format[cont_frmt])
@@ -50,3 +51,5 @@ int _printf(const char *format, ...)
 	va_end(data_elipse);
 	return (n_return);
 }
+
+
