@@ -72,7 +72,7 @@ int print_s(va_list data)
 		_putchar('U');
 		_putchar('L');
 		_putchar('L');
-		return(0);
+		return (0);
 	}
 	s = va_arg(data, char *);
 	lenght = _puts(s);
