@@ -67,7 +67,7 @@ int print_s(va_list data)
 	int lenght;
 
 	if (data == NULL)
-		return (NULL);
+		return(0);
 	s = va_arg(data, char *);
 	lenght = _puts(s);
 	return (lenght);
