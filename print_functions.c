@@ -54,7 +54,7 @@ int print_id(va_list data)
 	{
 		ret_count += print_id_motho(s);/*Func for more than 1000*/
 	}
-	return (0);
+	return (ret_count);
 }
 /**
  * print_s - this is a function to print a string
