@@ -20,7 +20,7 @@ compile or call this function as required
 
 ## Running the tests
 
-##### #create a main.c with the next code
+##### create a main.c with the next code
 
 ###### #include <limits.h>
 ###### #include <stdio.h>
@@ -47,7 +47,7 @@ The test output should be as follows
 Let's try to printf a simple sentence.
 Let's try to printf a simple sentence.
 
-### And coding style tests
+### And coding style test
 
 ## Built With
 
