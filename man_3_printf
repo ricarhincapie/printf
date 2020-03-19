@@ -1,63 +1,63 @@
-_PRINTF(3)
-=========
- 
-NAME
-----
-_printf
- 
-SYNOPSIS
---------
-#include "holberton.h"
- 
-DESCRIPTION
------------
-_printf is a function for data output on screen according to a pre-established format described below
+.TH "_PRINTF" "3" "MARCH 2020" "_printf man page"
+.SH NAME
+.B _printf
+- print data.
+.SH SYNOPSIS
+.sp
+.B int _printf(const char *
+.I format
+.B , ...);
+.SH DESCRIPTION
+_printf is an imitation of the original function printf. 
+.sp
+Is an imitation to the function printf to print in stdout according to a
+.I format
+.sp
+Project created for Holberto School to put in pratice all own knowledges of C
+.sp
+.B Return:
+.sp
+The number of characters printed (excluding the null byte used to end output to strings)
+.sp
+.B Output:
+.sp
+This _prinf create for print the diferents strings input to then print in the scream. 
+.sp
+.B Format:
+.sp
+The function can receive a string of characters and print them on the screen, also if one of the letters of which a format has been created is used that uses a function to show on the screen if the data is a, string, character, integer, decimal . to later show it.
 
-c - Allows us to print character by character
+Example: _printf ("Hello god, your number is:% d.", 3); and the output would be --- Hello god, your number is: 3.
+--- 
+.SH OPTIONS
+.sp
+There are different preset options that allow the user to use them to display certain screen if it is a string, character, integer or decimal.
 
-examples:
- 
-entry ---> _printf ("Character: [% c] \ n", 'H');
-autput ---> Character: [H]
-
-s - It allows us to print a whole line of characters
-
-entry ---> _printf ("String: [% s] \ n", "I am a string!");
-output ---> String: [I am a string!]
-
-d and i - These two formats allow us to show integers on the screen
-
-examples:
-
-entry ---> _printf ("Negative: [% d] \ n", -762534);
-output ---> Negative: [- 762534]
-
-% - This percentage is used to identify the pre-established formats which must necessarily be before the type of format that is required.
-
-examples:
-
-% c - used for character
-% i - used for integer
-% s - used for string
-
-In this previous order, the data type formats to be printed on the screen are handled.
-
-RETURN VALUE
-
-Upon successful return, these functions return the number of characters printed (excluding the null byte used to end output to strings).
-
- 
-BUGS
-----
-if you discover bugs try to let us know
- 
-AUTHOR
------
-Written by Ricardo Hincapie, <1516@holbertonschool.com>
-	   Javier  Jaramillo, <1604@holbertonschool.com>			
- 
- 
-REFERENCIAS
------------
-
-Printf(3): https://linux.die.net/man/3/printf
+This preset format mainly has a % that must be prepended to the preset letter as an indicator of the function that allows us to show previously determined data types.
+.sp
+.PP
+After the % followed by the specifier, a comma (,) will separate it from the next argument that must be a variable that has the same type of the char specifier.
+.sp
+.B Example
+.sp
+To invoke the function passing strings to it:
+.sp
+_printf("%s", variable of type string);
+.B Types of Conversion Specifiers
+.sp
+%c Prints a
+.I single character.
+.sp
+%s Prints an
+.I entire string
+.sp
+%d, %i Prints an
+.I integer.
+.SH SEE ALSO
+.sp
+For more information check out man printf(3)
+.SH BUGS
+This function does not handle flags nor precision.
+.SH AUTHOR
+Javier Jaramillo and Ricardo Hincapie, Cohort 11, Holberton school.
+.THt"18 de marzo 2020"
