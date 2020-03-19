@@ -20,18 +20,12 @@ compile or call this function as required
 
 ## Running the tests
 
-create a main.c with the next code
-.sp
-#include <limits.h>
-.sp
-#include <stdio.h>
-#include "holberton.h"
+######create a main.c with the next code
 
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
+#######include <limits.h>
+#######include <stdio.h>
+#######include "holberton.h"
+
 int main(void)
 {
     int len;
