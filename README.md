@@ -26,12 +26,12 @@ compile or call this function as required
 ###### #include <stdio.h>
 ###### #include "holberton.h"
 
-int main(void)
-{
-    int len;
-    int len2;
-    unsigned int ui;
-    void *addr;
+###### int main(void)
+###### {
+######    int len;
+######    int len2;
+######    unsigned int ui;
+######    void *addr;
 
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
@@ -51,9 +51,9 @@ Let's try to printf a simple sentence.
 
 ## Built With
 
-*emacs
-*ubuntu 14.0
-*github
+###### *emacs
+###### *ubuntu 14.0
+###### *github
 
 ## Contributing
 
@@ -63,7 +63,7 @@ https://github.com/ricarhincapie/printf
 
 ## Authors
 
-* **Ricardo Hincapie** - ** - **Javier Jaramillo** *
+###### * **Ricardo Hincapie** - ** - **Javier Jaramillo** *
 
 See also the list of [contributors](https://github.com/ricarhincapie/printf) who participated in this project.
 
