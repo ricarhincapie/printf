@@ -35,7 +35,7 @@ int print_id_motho(int s)
 		}
 	return (5);
 	}
-	else/*if(s > 99999 && s < 1000000)*/
+	if(s > 99999 && s < 1000000)
 	{
 		divs = 100000;
 		while (divs > 0)
@@ -45,4 +45,48 @@ int print_id_motho(int s)
 		}
 	return (6);
 	}
+	if(s > 999999 && s < 10000000)
+	{
+		divs = 1000000;
+		while (divs > 0)
+		{
+			_putchar(((s / divs) % 10) + '0');
+			divs /= 10;
+		}
+		return (7);
+	}
+	if(s > 9999999 && s < 100000000)
+	{
+		divs = 10000000;
+		while (divs > 0)
+		{
+			_putchar(((s / divs) % 10) + '0');
+			divs /= 10;
+		}
+		return (8);
+	}
+	if(s > 99999999 && s < 1000000000)
+	{
+		divs = 100000000;
+		while (divs > 0)
+		{
+			_putchar(((s / divs) % 10) + '0');
+			divs /= 10;
+		}
+		return (9);
+	}
+	/*if(s > 999999999 && s <= 2147483648)*/
+	if(s >= 1000000000)
+	{
+		divs = 1000000000;
+		while (divs > 0)
+		{
+			_putchar(((s / divs) % 10) + '0');
+			divs /= 10;
+		}
+		_putchar(8);
+		return (10);
+	}
+	else
+		return (-1);
 }
