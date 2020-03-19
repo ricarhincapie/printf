@@ -21,11 +21,11 @@ compile or call this function as required
 ## Running the tests
 
 create a main.c with the next code
-
+.sp
 #include <limits.h>
 #include <stdio.h>
 #include "holberton.h"
-
+.sp
 /**
  * main - Entry point
  *
