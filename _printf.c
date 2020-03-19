@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _printf - this is a print_all
  *@format: this is a format
@@ -15,14 +16,16 @@ int _printf(const char *format, ...)
 	};
 	va_list data_elipse;
 	unsigned int cont_strc, cont_frmt = 0;
-	int n_return, func_return = 0;
+	int n_return = 0; 
+	int func_return = 0;
+
 
 	if(format == NULL)
 		return (-1);
 	va_start(data_elipse, format);
-	while (format && format[cont_frmt])
+	while (format[cont_frmt]) /*The problem may be here*/
 	{
-		if (format[cont_frmt] != '%')
+		if (format && format[cont_frmt] != '%')
 		{
 			_putchar(format[cont_frmt]);
 			cont_frmt++;
