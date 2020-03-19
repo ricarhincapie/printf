@@ -23,9 +23,10 @@ compile or call this function as required
 create a main.c with the next code
 .sp
 #include <limits.h>
+.sp
 #include <stdio.h>
 #include "holberton.h"
-.sp
+
 /**
  * main - Entry point
  *
