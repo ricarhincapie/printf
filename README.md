@@ -20,11 +20,11 @@ compile or call this function as required
 
 ## Running the tests
 
-######create a main.c with the next code
+##### #create a main.c with the next code
 
-#######include <limits.h>
-#######include <stdio.h>
-#######include "holberton.h"
+###### #include <limits.h>
+###### #include <stdio.h>
+###### #include "holberton.h"
 
 int main(void)
 {
