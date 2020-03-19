@@ -65,16 +65,13 @@ int print_s(va_list data)
 {
 	char *s;
 	int lenght;
-
-	if (data == NULL)
-	{
-		_putchar('N');
-		_putchar('U');
-		_putchar('L');
-		_putchar('L');
-		return (0);
-	}
+	
 	s = va_arg(data, char *);
+	if (s == NULL)
+	{
+		_puts("(null)");
+		return (6);
+	}
 	lenght = _puts(s);
 	return (lenght);
 }

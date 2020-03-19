@@ -17,6 +17,8 @@ int _printf(const char *format, ...)
 	unsigned int cont_strc, cont_frmt = 0;
 	int n_return, func_return = 0;
 
+	if(format == NULL)
+		return (-1);
 	va_start(data_elipse, format);
 	while (format && format[cont_frmt])
 	{
@@ -30,6 +32,8 @@ int _printf(const char *format, ...)
 		{
 			cont_strc = 0;
 			cont_frmt += 1;
+			if (!format[cont_frmt])
+				return (-1);
 			if (format[cont_frmt] == '%')
 			{
 				_putchar('%');
